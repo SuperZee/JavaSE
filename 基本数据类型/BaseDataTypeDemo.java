@@ -49,8 +49,13 @@ public class BaseDataTypeDemo{
 
 		// 表达类型自动提升
 		short sValue = -5;
-		sValue = sValue + 4;  // 企图把一个int类型赋值给short会发生错误
+		//sValue = sValue + 4;  // 企图把一个int类型赋值给short会发生错误
 		//BaseDataTypeDemo.java:52: 错误: 不兼容的类型: 从int转换到short可能会有损失
+
+		//强制类型转换
+		String str = "97";
+		int int_str = Integer.parseInt(str);
+		System.out.println(int_str);   //97
 
 	}
 }
