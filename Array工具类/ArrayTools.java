@@ -24,6 +24,12 @@ public class ArrayTools{
 		boolean isEqual = Arrays.equals(a,b);
 		System.out.println(Arrays.toString(b));
 		System.out.println(isEqual); // true
+
+		// 填充数组
+		int[] c = new int[5];
+		Arrays.fill(c,-1);
+		System.out.println(Arrays.toString(c));
+		// [-1, -1, -1, -1, -1]
 		
 	}
 }
