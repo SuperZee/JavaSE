@@ -28,7 +28,18 @@ public class ArrayDemo{
 		for (int i = 0; i < pArr.length; i++) {
 			pArr[i].info();
 		}
-
+		// Java没有多维数组
+		// 定义了一个 '二维数组'
+		int[][] arrs;
+		arrs = new int[2][2];
+		arrs[0][0] = 1;
+		arrs[0][1] = 2;
+		arrs[1][1] = 4;
+		for (int i = 0; i < arrs.length; i++) {
+			for (int j = 0;j < arrs[i].length; j++ ) {
+				System.out.println(arrs[i][j]);
+			}
+		}
 	}
 }
 
